@@ -1,0 +1,27 @@
+﻿<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"/>
+<title>Lösung zur 4. Aufgabe</title>
+</head>
+<body>
+<script>
+function main() {
+	var n = prompt('Bitte eine Zahl eingben:',0);
+	n = faculty(n);
+	alert('n! = ' + n);
+}
+
+function faculty(n) {
+	var nf = 1;
+	
+	for(var i = 1; i <= n; i++)
+		nf = nf * i;
+		
+	return nf;
+}
+</script>
+<button onclick="main();">Zum Starten hier klicken</button>
+<footer>&copy; <address style="display: inline;">Florian Rappl</address>. Zuletzt aktualisiert am <time datetime="2011-10-15T17:36Z" style="display: inline;">15.10.2011 um 18:36</time></footer>
+</body>
+</html>
